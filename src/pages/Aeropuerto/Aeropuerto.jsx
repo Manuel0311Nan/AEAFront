@@ -8,7 +8,7 @@ const Aeropuerto = () => {
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">Aeropuerto</h1>
             <p class="lead text-muted">
-              Aquí podrás encontrar facilmente los parkings del aeropuerto 
+              Aquí podrás encontrar facilmente los parkings del aeropuerto
             </p>
           </div>
         </div>

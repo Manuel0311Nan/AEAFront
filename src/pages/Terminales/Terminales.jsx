@@ -35,16 +35,6 @@ const Terminales = () => {
       image: "https://res.cloudinary.com/manuelcodex/image/upload/v1660150842/terminales/wfs3_gpu6fn.png",
     }, {
       id: 4,
-      name: 'Swissport',
-      logo: "https://res.cloudinary.com/manuelcodex/image/upload/v1660318155/terminales/SWISPORT_hekvbf.jpg",
-      doc: [
-        "Recogida: efergjpejogihjerogjeogijeorigjeorjgoerjgiejro",
-        "Entrega: ohnjiofisfjoijfoifiovhuieduvheifuheitughotugpeg",
-      ],
-      entrada: "Dentro y Fuera",
-      image: "https://res.cloudinary.com/manuelcodex/image/upload/v1660150842/terminales/swissport_pllsin.png",
-    }, {
-      id: 5,
       name: 'DHL nuevo',
       logo: "https://res.cloudinary.com/manuelcodex/image/upload/v1660318155/terminales/dhl_iriv0l.png",
       doc: [
@@ -54,7 +44,7 @@ const Terminales = () => {
       entrada: "Fuera",
       image: "https://res.cloudinary.com/manuelcodex/image/upload/v1660151108/terminales/dhl_nuevo_bmcpbn.png",
     }, {
-      id: 6,
+      id: 5,
       name: 'DHL antiguo',
       logo: "https://res.cloudinary.com/manuelcodex/image/upload/v1660318155/terminales/dhl_iriv0l.png",
       doc: [
@@ -65,7 +55,7 @@ const Terminales = () => {
       image: "https://res.cloudinary.com/manuelcodex/image/upload/v1660150842/terminales/dhlantiguo_epnxqy.png",
     },
     {
-      id: 7,
+      id: 6,
       name: 'IAG cargo', 
       logo: "https://res.cloudinary.com/manuelcodex/image/upload/v1660318155/terminales/iag_xpz45x.png",
       doc: [
@@ -75,7 +65,17 @@ const Terminales = () => {
       entrada: "Fuera",
       image: "https://res.cloudinary.com/manuelcodex/image/upload/v1660150844/terminales/iagCargo_hjwktb.png",
     }
-    ,
+    ,    {
+      id: 7,
+      name: 'Swissport',
+      logo: "https://res.cloudinary.com/manuelcodex/image/upload/v1660318155/terminales/SWISPORT_hekvbf.jpg",
+      doc: [
+        "Recogida: efergjpejogihjerogjeogijeorigjeorjgoerjgiejro",
+        "Entrega: ohnjiofisfjoijfoifiovhuieduvheifuheitughotugpeg",
+      ],
+      entrada: "Dentro y Fuera",
+      image: "https://res.cloudinary.com/manuelcodex/image/upload/v1660150842/terminales/swissport_pllsin.png",
+    }, 
     {
       id: 8,
       name: 'ACL', 
