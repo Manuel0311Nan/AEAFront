@@ -1,6 +1,6 @@
 import React from 'react'
 import Detail from './Detail/Detail'
-
+import { Link } from 'react-router-dom';
 const Terminales = () => {
   const terminales = [
     {
@@ -106,11 +106,14 @@ const Terminales = () => {
           {terminales.map((detail) => {
             return (
               <Detail
+                 id={detail.id}
                 logo={detail.logo}
                 name={detail.name}
                 entrada={detail.entrada}
                 image={detail.image}
+                
               />
+              
             );
           })}
         </div>

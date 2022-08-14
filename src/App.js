@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="*" element={<Navigate to="/"/>} />
         {routes.map((route) => (
           <Route key={route.path} path={route.path} element={route.element} />
         ))}

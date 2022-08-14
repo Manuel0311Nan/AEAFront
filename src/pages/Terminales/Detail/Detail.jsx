@@ -1,7 +1,9 @@
-import React from "react";
+/* eslint-disable no-template-curly-in-string */
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 
 const Detail = (props) => {
+  
   return (
     <section className="col">
       <div className="card m-2 bg-primary">
@@ -10,7 +12,7 @@ const Detail = (props) => {
           <h3 className="text-center text-light">{props.name}</h3>
           {/* <img className="img-fluid w-100" src={props.image} alt={props.name} />
           <h3 className="text-light"> Entrada por: {props.entrada}</h3> */}
-          <Link className="btn btn-primary border-bottom" to={`/terminalDetail/${props.id}`}>Detail</Link>
+          <Link className="btn btn-primary border-bottom" to={"/terminalesDetail/${props.id}"}>Detail</Link>
         </div>
       </div>
     </section>
