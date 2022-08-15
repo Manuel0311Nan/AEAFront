@@ -4,8 +4,8 @@ import Aeropuerto from "../pages/Aeropuerto/Aeropuerto";
 import Almacen from "../pages/Almacen/Almacen";
 import Flota from "../pages/Flota/Flota";
 import Terminales from "../pages/Terminales/Terminales";
-import TerminalesDetail from '../pages/TerminalesDetail/TerminalesDetail';
-
+// import TerminalesDetail from '../pages/TerminalesDetail/TerminalesDetail';
+import Detail from '../pages/Terminales/Detail/Detail';
 const routes = [
     {
         path: "/",
@@ -34,8 +34,8 @@ const routes = [
     }
     ,
     {
-        path: "/terminalDetail",
-        element: <TerminalesDetail/>,
+        path: "/Detail/:id/:name",
+        element: <Detail/>,
         isPrivate:false
     }
 ]
