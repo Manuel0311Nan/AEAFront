@@ -1,106 +1,40 @@
-import React from "react";
-import Detail from "./Detail/Detail";
+import React, {useState,useEffect} from "react";
+// import Detail from "./Detail/Detail";
 import { Link } from "react-router-dom";
-const Terminales = () => {
-  const terminales = [
-    {
-      id: 1,
-      name: "WFS terminal 1",
-      logo: "https://res.cloudinary.com/manuelcodex/image/upload/v1660318155/terminales/wfs_efplk2.png",
-      doc: [
-        "Recogida: efergjpejogihjerogjeogijeorigjeorjgoerjgiejro",
-        "Entrega: ohnjiofisfjoijfoifiovhuieduvheifuheitughotugpeg",
-      ],
-      entrada: "Dentro y Fuera",
-      image:
-        "https://res.cloudinary.com/manuelcodex/image/upload/v1660150842/terminales/wfs1_b1e6hr.png",
-    },
-    {
-      id: 2,
-      name: "WFS terminal 2",
-      logo: "https://res.cloudinary.com/manuelcodex/image/upload/v1660318155/terminales/wfs_efplk2.png",
-      doc: [
-        "Recogida: efergjpejogihjerogjeogijeorigjeorjgoerjgiejro",
-        "Entrega: ohnjiofisfjoijfoifiovhuieduvheifuheitughotugpeg",
-      ],
-      entrada: "Dentro y Fuera",
-      image:
-        "https://res.cloudinary.com/manuelcodex/image/upload/v1660150842/terminales/wfs2_dnyp88.png",
-    },
-    {
-      id: 3,
-      name: "WFS terminal 3",
-      logo: "https://res.cloudinary.com/manuelcodex/image/upload/v1660318155/terminales/wfs_efplk2.png",
-      doc: [
-        "Recogida: efergjpejogihjerogjeogijeorigjeorjgoerjgiejro",
-        "Entrega: ohnjiofisfjoijfoifiovhuieduvheifuheitughotugpeg",
-      ],
-      entrada: "Fuera",
-      image:
-        "https://res.cloudinary.com/manuelcodex/image/upload/v1660150842/terminales/wfs3_gpu6fn.png",
-    },
-    {
-      id: 4,
-      name: "DHL nuevo",
-      logo: "https://res.cloudinary.com/manuelcodex/image/upload/v1660318155/terminales/dhl_iriv0l.png",
-      doc: [
-        "Recogida: efergjpejogihjerogjeogijeorigjeorjgoerjgiejro",
-        "Entrega: ohnjiofisfjoijfoifiovhuieduvheifuheitughotugpeg",
-      ],
-      entrada: "Fuera",
-      image:
-        "https://res.cloudinary.com/manuelcodex/image/upload/v1660151108/terminales/dhl_nuevo_bmcpbn.png",
-    },
-    {
-      id: 5,
-      name: "DHL antiguo",
-      logo: "https://res.cloudinary.com/manuelcodex/image/upload/v1660318155/terminales/dhl_iriv0l.png",
-      doc: [
-        "Recogida: efergjpejogihjerogjeogijeorigjeorjgoerjgiejro",
-        "Entrega: ohnjiofisfjoijfoifiovhuieduvheifuheitughotugpeg",
-      ],
-      entrada: "Fuera",
-      image:
-        "https://res.cloudinary.com/manuelcodex/image/upload/v1660150842/terminales/dhlantiguo_epnxqy.png",
-    },
-    {
-      id: 6,
-      name: "IAG cargo",
-      logo: "https://res.cloudinary.com/manuelcodex/image/upload/v1660318155/terminales/iag_xpz45x.png",
-      doc: [
-        "Recogida: efergjpejogihjerogjeogijeorigjeorjgoerjgiejro",
-        "Entrega: ohnjiofisfjoijfoifiovhuieduvheifuheitughotugpeg",
-      ],
-      entrada: "Fuera",
-      image:
-        "https://res.cloudinary.com/manuelcodex/image/upload/v1660150844/terminales/iagCargo_hjwktb.png",
-    },
-    {
-      id: 7,
-      name: "Swissport",
-      logo: "https://res.cloudinary.com/manuelcodex/image/upload/v1660318155/terminales/SWISPORT_hekvbf.jpg",
-      doc: [
-        "Recogida: efergjpejogihjerogjeogijeorigjeorjgoerjgiejro",
-        "Entrega: ohnjiofisfjoijfoifiovhuieduvheifuheitughotugpeg",
-      ],
-      entrada: "Dentro y Fuera",
-      image:
-        "https://res.cloudinary.com/manuelcodex/image/upload/v1660150842/terminales/swissport_pllsin.png",
-    },
-    {
-      id: 8,
-      name: "ACL",
-      logo: "https://res.cloudinary.com/manuelcodex/image/upload/v1660318155/terminales/ACL_mxaoas.jpg",
-      doc: [
-        "Recogida: efergjpejogihjerogjeogijeorigjeorjgoerjgiejro",
-        "Entrega: ohnjiofisfjoijfoifiovhuieduvheifuheitughotugpeg",
-      ],
-      entrada: "Dentro y Fuera",
-      image:
-        "https://res.cloudinary.com/manuelcodex/image/upload/v1660318408/terminales/acl_lyinn5.png",
-    },
-  ];
+// import { BASE_URL } from "../../assets/apiRoutes";
+const Terminales = ({terminales}) => {
 
+//   let [terminales, setTerminales] = useState([]);
+ 
+  // useEffect(() => {
+
+  //   const fetchData = async () => {
+  //     try {
+  //       const data = await fetch(`${BASE_URL}/terminales`, {
+  //         method: 'GET',
+  //         headers: {
+  //           'Content-Type': 'application/json',
+  //         }
+  //       });
+
+  //       const jsonData = await data.json();
+  //       setTerminales(jsonData.data.terminales);
+
+
+  //     } catch (error) {
+  //       // logout(dispatch)
+  //       // navigate('/users/login')
+  //       return console.log(error, 'vaya, ha habido un error')
+  //     }
+  //     fetchData()
+  //   }
+
+  // }
+  // useEffect(() => {
+  //   fetch(`${BASE_URL}/terminales`)
+  //     .then(response => response.json())
+  //     .then(data => setUsers(data))
+  // }, []);
   return (
     <main>
       <section class="py-5 text-center container">
@@ -116,31 +50,31 @@ const Terminales = () => {
       </section>
       <div class=" container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
-          {terminales.map((detail) => {
-            return (
-                <section className="col">
-                  <div className="card m-2 bg-primary">
-                    <img
-                      className="card-img-top bd-placeholder-img"
-                      src={detail.logo}
-                      alt={detail.name}></img>
-                    <div className="card-body">
-                      <h3 className="text-center text-light">{detail.name}</h3>
-                    <div>
-                      <Link
-                        className="btn btn-primary border-bottom"
-                        to={`/Detail/${terminales.id}`}
-                      >
-                        Detail
-                      </Link>
-                    </div>
-                    </div>
+          {/* {terminales.map((terminal) => { */}
+            <section className="col">
+              <div className="card m-2 bg-primary">
+                <img
+                className="card-img-top bd-placeholder-img"
+                src={terminales.logo}
+                alt={terminales.name}
+                >
+                </img>
+                <div className="card-body">
+                  <h3 className="text-center text-light">{terminales.name}</h3>
+                  <div>
+                    <Link
+                      className="btn btn-primary border-bottom"
+                    to={`/Detail/${terminales.id}`}
+                    >
+                      Detail
+                    </Link>
                   </div>
-                </section>
-            );
-          })}
+                </div>
+              </div>
+            </section>
+          {/* })} */}
+          </div>
         </div>
-      </div>
     </main>
   );
 };
