@@ -28,18 +28,16 @@ const Aeropuerto = () => {
           </div>
         </div>
       </section>
-      <div className=" container">
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
+      <div className="container ">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 d-flex flex-column justify-content-center align-items-center">
           {aeropuerto.map((aerop, key) => (
-            <ul key={aerop._id} className="col">
-              <div>
-                
+            <ul key={aerop._id} className="col ">
+              <div className=" text-center ">
                 <Link
-                  
-                  className="btn btn-primary border-bottom"
+                  className="btn btn-primary border-bottom p-3 "
                   to={`/detailaeropuerto/${aerop._id}`}
                 >{aerop.parkings}
-                  Detail
+
                 </Link>
               </div>
             </ul>
