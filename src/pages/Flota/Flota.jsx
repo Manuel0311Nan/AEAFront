@@ -30,16 +30,13 @@ const Flota = () => {
             <section key={flota._id} className="col">
               <div className="card m-2 bg-primary">
                 <h1
-                className="text-center p-2"
+                className="text-center text-light fw-bold p-2"
                 >
                 {flota.typeName}
                 </h1>
                 <Link to={`/detailFlota/${flota._id}`}>
                 <div className="card-body">
                   <img className='w-100' src={flota.image[0]} alt={flota.typeName}></img>
-                  <div className=' d-flex justify-content-center'>
-                      Detail
-                  </div>
                 </div>
                 </Link>
               </div>

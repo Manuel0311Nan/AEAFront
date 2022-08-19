@@ -7,6 +7,7 @@ import Terminales from "../pages/Terminales/Terminales";
 // import TerminalesDetail from '../pages/TerminalesDetail/TerminalesDetail';
 import Detail from '../pages/Terminales/Detail/Detail';
 import DetailFlota from '../pages/Flota/Detail/DetailFlota';
+import  DetailAeropuerto  from '../pages/Aeropuerto/DetailAeropuerto/DetailAeropuerto';
 const routes = [
     {
         path: "/",
@@ -43,6 +44,12 @@ const routes = [
     {
         path: "/detailFlota/:id",
         element: <DetailFlota/>,
+        isPrivate:false
+    }
+    ,
+    {
+        path: "/detailaeropuerto/:id",
+        element: <DetailAeropuerto/>,
         isPrivate:false
     }
 ]
