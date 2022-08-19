@@ -5,8 +5,6 @@ import { BASE_URL } from "../../../assets/apiRoutes";
 const Detail = () => {
   const { id } = useParams();
 
-  console.log(id);
-
   let [terminalesDetail, SetTerminalesDetail] = useState();
 
   useEffect(() => {
@@ -42,10 +40,10 @@ const Detail = () => {
                   {" "}
                   Entrada por: {terminalesDetail.acceso}
                 </h3>
-                {/* {terminalesDetail.doc.filter((info) => */}
-                <h3 className="text-light mt-2 text-wrap">
+                  <h3 className="text-light mt-2 text-wrap">
+                  {" "}
                   {terminalesDetail.doc}
-                </h3>
+                  </h3>
               </div>
             </div>
           </section>

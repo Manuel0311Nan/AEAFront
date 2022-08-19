@@ -13,7 +13,6 @@ const Terminales = () => {
       .then(response => response.json())
       .then(data => setTerminales(data))
   }, []);
-  console.log(terminales)
 
   return (
     <main>
@@ -44,7 +43,7 @@ const Terminales = () => {
                   <div>
                     <Link
                       className="btn btn-primary border-bottom"
-                    to={`/detail/${terminal._id}`}
+                    to={`/detailTerminales/${terminal._id}`}
                     >
                       Detail
                     </Link>
