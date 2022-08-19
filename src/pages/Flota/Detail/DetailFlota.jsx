@@ -83,7 +83,9 @@ const DetailFlota = () => {
                     data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev"
                   >
-                    <span className="text-dark">Previous</span>
+                    <span class="material-symbols-outlined text-dark">
+                      arrow_back_ios
+                    </span>
                   </button>
                   <button
                     className="carousel-control-next"
@@ -91,7 +93,9 @@ const DetailFlota = () => {
                     data-bs-target="#carouselExampleControls"
                     data-bs-slide="next"
                   >
-                    <span className="text-dark">Next</span>
+                    <span class="material-symbols-outlined text-dark">
+                      arrow_forward_ios
+                    </span>
                   </button>
                 </div>
               </div>
