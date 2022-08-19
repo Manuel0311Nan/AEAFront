@@ -34,7 +34,7 @@ const routes = [
     }
     ,
     {
-        path: "/Detail/:id/:name",
+        path: "/detail/:id",
         element: <Detail/>,
         isPrivate:false
     }
