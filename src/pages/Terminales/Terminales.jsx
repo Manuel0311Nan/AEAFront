@@ -28,13 +28,13 @@ const Terminales = () => {
           </div>
         </div>
       </section>
-      <div class=" container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
+      <div className=" container">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
           {terminales.map((terminal, key) => (
             <section key={terminal._id} className="col">
               <div className="card m-2 bg-primary">
                 <img
-                className="card-img-top bd-placeholder-img"
+                className="card-img-top p-2"
                 src={terminal.logo}
                 alt={terminal.name}
                 >
