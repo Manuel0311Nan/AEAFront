@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { BASE_URL } from "../../../assets/apiRoutes";
+import { Link } from "react-router-dom";
 const DetailFlota = () => {
   const { id } = useParams();
 
@@ -18,7 +19,11 @@ const DetailFlota = () => {
         <p>Cargando...</p>
       ) : (
         <>
-          <section className="col container">
+            <section className="col container">
+            <Link
+                  to="/flota"
+                  className=" btn btn-light text-primary fw-bold border-primary align-self-center mb-2"
+                >Volver</Link>
             <div className="card m-2 bg-primary ">
               <div className="card-body d-flex flex-column align-items-center">
                 <h3 className="text-center fw-bold text-light">
@@ -83,7 +88,7 @@ const DetailFlota = () => {
                     data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev"
                   >
-                    <span class="material-symbols-outlined text-dark">
+                    <span className="material-symbols-outlined text-dark">
                       arrow_back_ios
                     </span>
                   </button>
@@ -93,12 +98,13 @@ const DetailFlota = () => {
                     data-bs-target="#carouselExampleControls"
                     data-bs-slide="next"
                   >
-                    <span class="material-symbols-outlined text-dark">
+                    <span className="material-symbols-outlined text-dark">
                       arrow_forward_ios
                     </span>
                   </button>
                 </div>
-              </div>
+                </div>
+
             </div>
           </section>
         </>

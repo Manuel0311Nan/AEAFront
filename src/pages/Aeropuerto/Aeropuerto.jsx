@@ -24,20 +24,24 @@ const Aeropuerto = () => {
               className="img-fluid"
               src="https://res.cloudinary.com/manuelcodex/image/upload/v1660932124/terminales/AeropuertoZonas_apsowo.png"
               alt="..."
-            ></img>
+              // useMap="#mapa"
+            >
+            </img>
+            {/* <map id="mapa">
+                <area alt="70s" shape="CIRCLE" coords="321, 434, 50" href="https://aeaback.herokuapp.com/detailaeropuerto/62ff6cb7eb4f058956f83560"></area>
+            </map> */}
           </div>
         </div>
       </section>
-      <div className="container ">
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 d-flex flex-column justify-content-center align-items-center">
+      <div className="container">
+        <div className="row w-100 d-flex flex-column flex-md-row justify-content-center align-items-center">
           {aeropuerto.map((aerop, key) => (
-            <ul key={aerop._id} className="col ">
-              <div className=" text-center ">
+            <ul key={aerop._id} className="col">
+              <div className="text-center ">
                 <Link
-                  className="btn btn-primary border-bottom p-3 "
+                  className="btn btn-primary border-bottom p-4 fw-bold"
                   to={`/detailaeropuerto/${aerop._id}`}
-                >{aerop.parkings}
-
+                >Parkings: {aerop.parkings[0] + aerop.parkings[1]}
                 </Link>
               </div>
             </ul>

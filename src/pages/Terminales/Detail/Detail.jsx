@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { BASE_URL } from "../../../assets/apiRoutes";
+import { Link } from "react-router-dom";
 const Detail = () => {
   const { id } = useParams();
 
@@ -18,7 +19,11 @@ const Detail = () => {
         <p>Cargando...</p>
       ) : (
         <>
-          <section className="col container">
+            <section className="col container">
+            <Link
+                  to="/terminales"
+                  className=" btn btn-light border-primary text-primary fw-bold  align-self-center mb-2"
+                >Volver</Link>
             <div className="card m-2 bg-primary d-flex flex-column align-items-center">
               <img
                 className="img-fluid w-25"
