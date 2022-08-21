@@ -13,8 +13,8 @@ const Aeropuerto = () => {
 
   return (
     <main>
-      <section className="py-5 text-center container">
-        <div className="row py-lg-5">
+      <section className="mt-1 text-center container">
+        <div className="row pb-lg-5">
           <div className="col-lg-6 col-md-8 mx-auto">
             <h1 className="fw-light">Aeropuerto</h1>
             <p className="lead text-muted">
@@ -34,17 +34,15 @@ const Aeropuerto = () => {
         </div>
       </section>
       <div className="container">
-        <div className="row w-100 d-flex flex-column flex-md-row justify-content-center align-items-center">
+        <div className="row  row-cols-2 row-cols-sm-5">
           {aeropuerto.map((aerop, key) => (
-            <ul key={aerop._id} className="col">
-              <div className="text-center ">
+              <div key={aerop._id} className="my-1">
                 <Link
                   className="btn btn-primary border-bottom p-4 fw-bold"
                   to={`/detailaeropuerto/${aerop._id}`}
                 >Parkings: {aerop.parkings[0] + aerop.parkings[1]}
                 </Link>
               </div>
-            </ul>
           ))}
         </div>
       </div>

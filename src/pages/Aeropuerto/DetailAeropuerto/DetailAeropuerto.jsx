@@ -20,10 +20,11 @@ export const DetailAeropuerto = () => {
       ) : (
         <>
             <section className="container">
+            <div className="container d-flex  justify-content-center">
             <Link
                   to="/aeropuerto"
-                  className=" btn btn-light text-primary border-primary fw-bold align-self-center mb-2"
-                >Volver</Link>
+                  className=" btn text-primary fw-bold align-content-center w-25 mb-2"
+                >Volver</Link></div>
             <div className="card m-2 bg-primary">
               <div className="d-flex flex-md-row flex-column justify-content-center align-items-center">
                 <div className=" text-center col-5">

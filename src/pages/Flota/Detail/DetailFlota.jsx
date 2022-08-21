@@ -20,10 +20,11 @@ const DetailFlota = () => {
       ) : (
         <>
             <section className="col container">
+            <div className="container d-flex  justify-content-center">
             <Link
                   to="/flota"
-                  className=" btn btn-light text-primary fw-bold border-primary align-self-center mb-2"
-                >Volver</Link>
+                  className=" btn text-primary fw-bold align-content-center w-25 mb-2"
+                >Volver</Link></div>
             <div className="card m-2 bg-primary ">
               <div className="card-body d-flex flex-column align-items-center">
                 <h3 className="text-center fw-bold text-light">
