@@ -15,7 +15,7 @@ const Header = () => {
           >
             {" "}
             <img
-              class="img-fluid w-25 align-content-center"
+              className="img-fluid w-25 align-content-center"
               src="https://res.cloudinary.com/manuelcodex/image/upload/v1660476846/terminales/logo_gz68ak.png"
               alt="logo"
             />
